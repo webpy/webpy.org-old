@@ -1,0 +1,26 @@
+## webpy.org configuration
+
+
+# setup databse
+db_parameters:
+    dbn: postgres
+    db: webpy_org
+    user: username
+    pw: 
+
+from_address: webpy.org <noreply@webpy.org>
+
+plugin_path:
+    - "infogami.plugins"
+    - ""
+
+plugins:
+    - wikitemplates
+    - links
+    - api
+    - webpy
+
+plugin_webpy:
+    # email addresses to receive modification notifications
+    notify: 
+        - joe@example.com

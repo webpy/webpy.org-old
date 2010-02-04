@@ -1,0 +1,1 @@
+../../vendor/js/jquery.textarearesizer/jquery.textarearesizer.compressed.js
