@@ -1,3 +1,5 @@
+import web
+
 from infogami import config
 from infogami.utils import delegate
 from infogami.utils.view import render, public
@@ -18,4 +20,4 @@ class hooks(client.hook):
         to = config.get("plugin_webpy", {}).get("notify")
         if to:
             msg = render_template("email/notify", page)
-            web.sendmail(config.from_address, to=to, subject=msg.subject.strip(), message=str(msg))
+            web.sendmail(config.from_address, to, subject=msg.subject.strip(), message=str(msg))
